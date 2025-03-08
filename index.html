@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,475;1,475&display=swap" rel="stylesheet">
+    <link rel="website icon" type="img" href="MyLogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Website-Front-End</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Front-End</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <!-- Το κουμπί του toggle menu -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <a  href="contact.html" class="contact-btn">Contact Me</a>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <p style="font-family: 'Roboto',sans-serif; font-weight: 700;">Hey, I am Panos</p>
+            <h1>I create <span class="highlight">Game design</span> and Web Developer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <button id="get-in-touch" class="cta">Get In Touch</button>
+        </div>
+        <div class="hero-image">
+            <img src="MyLogo.jpg" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="icons">
+            <i class="fa-brands fa-html5" style="color: red;"></i>
+            <i class="fa-brands fa-css3" style="color: blue;"></i>
+            <i class="fa-brands fa-js" style="color: yellow;"></i>
+        </div>
+        <p style="font-weight: 600; font-family: 'Roboto',sans-serif;">Here you will find the languages ​​I use.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <hr>
+        <p>Γεια σου! Είμαι ο πάνος, ένας παθιασμένος προγραμματιστής με εξειδίκευση στο Front-End Development και τη δημιουργία διαδραστικών εμπειριών.</p>
+        <p>Ασχολούμαι με την ανάπτυξη ιστοσελίδων και παιχνιδιών, χρησιμοποιώντας HTML, CSS, JavaScript, καθώς και άλλες σύγχρονες τεχνολογίες. Μου αρέσει να δημιουργώ όμορφα, λειτουργικά και εύχρηστα projects, είτε πρόκειται για ιστοσελίδες είτε για διαδραστικά παιχνίδια.</p>
+        <p>Έχω φτιάξει διάφορα projects, όπως:<br>
+        - Ένα <b>racing game</b> με HTML, CSS και JavaScript 🚗💨 <br>
+        - Ένα <b>horror game</b> με jumpscares και σκοτεινά δωμάτια 👻<br>
+        - Μια <b>πλατφόρμα streaming</b> για μουσική 🎵<br>
+        - Ένα <b>driving school simulator</b> όπου ο παίκτης ακολουθεί τους κανόνες οδήγησης 🚦<br>
+        </p> 
+        <p>Στον ελεύθερό μου χρόνο, μου αρέσει να εξερευνώ νέες τεχνολογίες, να βελτιώνω τα skills μου και να δουλεύω σε νέα projects. Αν θέλεις να συνεργαστούμε ή να μάθεις περισσότερα για τη δουλειά μου, μη διστάσεις να επικοινωνήσεις μαζί μου! 🚀</p>
+    </section>
+    <section id="projects">
+        <h2>Έργα</h2>
+         <hr>
+        <div class="project">
+            <h3>Live Stream</h3>
+            <p>Ένα website Που παίζει ευχάριστη και γεμάτη ενέργεια μουσική , ειδανικό για τα live. </p>
+            <img src="stream.png" alt="stream" height="200" width="400">
+            <a href="https://inspiring-tartufo-05e4c7.netlify.app/" target="_blank">Δείτε το Έργο</a>
+        </div>
+        <div class="project">
+            <h3>Διαδραστική Ιστοσελίδα Χαρακτηριστικών</h3>
+            <p>Αυτή η ιστοσελίδα επιτρέπει στους χρήστες να πλοηγούνται και να αλληλεπιδρούν με το περιεχόμενο, χρησιμοποιώντας σύγχρονες τεχνολογίες.</p>
+            <img src="Ai.web.png" alt="stream" height="200" width="400">
+            <a href="https://panagiwthsbarruku.github.io/Aiweb/" target="_blank">Δείτε το Έργο</a>
+        </div>
+        <div class="project">
+            <h3>Ιστοσελίδα για ενημέρωση καιρού</h3>
+            <p>Αυτή η ιστοσελίδα επιτρέπει στους χρήστες να δουν σε πραγματικό χρόνο τον καιρό όλου του κόσμου.</p>
+            <img src="Weather.png" alt="stream" height="200" width="400">
+            <a href="https://panagiwthsbarruku.github.io/Weather-App/" target="_blank">Δείτε το Έργο</a>
+        </div>
+        <div class="project">
+            <h3>Ιστοσελίδα Chatbot</h3>
+            <p>Ιστοσελίδα με το Chatbot. Μπορεις να συνομιλησεις μαζί του (Το Chatbot μπορεί να κάνει λάθη) </p>
+            <img src="Chatbot.png" alt="stream" height="200" width="400">
+            <a href="https://panagiwthsbarruku.github.io/www.Chatbot.gr/" target="_blank">Δείτε το Έργο</a>
+        </div>
+        <div class="project">
+            <h3>Ιστοσελίδα TetrisGame</h3>
+            <p>Διασκεδατικό παιχνίδι Tetris! </p>
+            <img src="tetris.png" alt="stream" height="200" width="400">
+            <a href="https://panagiwthsbarruku.github.io/www.Tetris.Game.gr/" target="_blank">Δείτε το Έργο</a>
+        </div>
+        <div class="project">
+            <h3>Ιστοσελίδα TicTacToe</h3>
+            <p>παιχνίδι ειδανικό για οικεγένια,παίξε μαζί με τους φίλους και τους συγγενείς σου! </p>
+            <img src="TicTacToe.png" alt="stream" height="200" width="400">
+            <a href="https://panagiwthsbarruku.github.io/www.TicTacToe.com/" target="_blank">Δείτε το Έργο</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Front-End - Όλα τα Δικαιώματα Διατηρούνται</p>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@WebDeveloper-op1fb" target="_blank" class="social-icon" >
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <i class="fa-brands fa-github" style="color: black;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fa-brands fa-instagram" style="background:linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C,#FD1D1D,#F56040,#F77737,#FCAF45); color: azure; border-radius: 50%; padding: 3px;"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
