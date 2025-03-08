@@ -1,0 +1,271 @@
+/* Γενικά στυλ */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+     font-family: 'Roboto',sans-serif;
+     font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.contact-btn {
+    background-color: #007bffc8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto',sans-serif;
+}
+
+.contact-btn:hover {
+    background-color: #7918ae;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50pc;
+}
+
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     font-family: 'Roboto',sans-serif;
+}
+
+.cta:hover {
+    background-color: #6800b3;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+/* Skills section */
+.skills {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+}
+
+.skills .icons {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.skills .icons i {
+    margin: 0 1rem;
+}
+.skills i:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* About me section */
+#about {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#about hr {
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+/* Projects section */
+#projects {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#projects h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#projects hr {
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333333b9;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+ .social-media:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+ }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav li {
+        margin: 0;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block; /* Εμφάνιση του toggle button */
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .menu-toggle {
+        display: none; /* Κρύψιμο σε μεγαλύτερες οθόνες */
+    }
+}
