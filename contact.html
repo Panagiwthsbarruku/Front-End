@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="website icon" type="img" href="MyLogo.jpg">
     <link rel="stylesheet" href="contact.css">
-      <link rel="stylesheet" href="contact.php">
-
     <title>contact</title>
 </head>
 <body>
-    <form action="contact.php" method="post">
-        <img src="MyLogo.jpg" alt="My personal logo" width="80">
-        <h3>Contact Me</h3>
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit" class="btn">Send Me
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-<a href="index.html" class="back-btn">Back
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-    </form>
-    
+   <section class="contact" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+          <form
+          action="https://formspree.io/f/xvgarlbe" method="POST"enctype="multipart/form-data">
+          <label>Your email:
+            <input type="email" name="email">
+          </label>
+          <button type="submit">Send
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        </div>
+      </section>
 </body>
-<script src="script.js"></script>
+<script src="button.js"></script>
 </html>
