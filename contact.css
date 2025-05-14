@@ -1,71 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
+/* contact.css */
+
+.contact {
+    background: #f9f9f9;
+    padding: 60px 0;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f4f4f4;
+.contact .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 40px 30px;
 }
 
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.contact h2 {
     text-align: center;
-    width: 320px;
-}
-
-form img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    font-size: 2rem;
     color: #333;
 }
 
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+.contact p {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #666;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #444;
+}
+
+.contact input[type="email"] {
+    margin-top: 8px;
+    padding: 10px 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
 }
 
-.btn {
-    background: #3148be;
-    color: white;
-    padding: 10px 15px;
+.contact input[type="email"]:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.contact button[type="submit"] {
+    background: #0078d7;
+    color: #fff;
     border: none;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
+    transition: background 0.2s;
 }
 
-.btn:hover {
-    background: #1f34a6;
-}
-
-.back-btn {
-    display: inline-block;
-    margin-top: 10px;
-    color: #3148be;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.back-btn:hover {
-    color: #1f34a6;
+.contact button[type="submit"]:hover {
+    background: #00a395;
 }
