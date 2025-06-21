@@ -13,29 +13,39 @@
   <div id="reader"></div>
   <div id="info"></div>
   <script>
-    function onScanSuccess(decodedText) {
-      fetch(`/get-product?code=${decodedText}`)
-        .then(res => res.json())
-        .then(product => {
-          const info = document.getElementById("info");
-          if (product && product.name) {
-            info.innerHTML = `
-              <strong>${product.name}</strong><br>
-              Μάρκα: ${product.brand}<br>
-              Τιμή: €${product.price.toFixed(2)}
-            `;
-          } else {
-            info.innerHTML = "Προϊόν δεν βρέθηκε.";
-          }
-        });
+    const products = {
+    "040584028": {
+      name: "Cookies Digestive",
+      brand: "Παπαδοπούλου Α.Ε.",
+      price: 1.49
+    },
+    "123456789": {
+      name: "Γάλα Πλήρες",
+      brand: "ΔΕΛΤΑ",
+      price: 1.20
     }
+  };
 
-    const html5QrCode = new Html5Qrcode("reader");
-    html5QrCode.start(
-      { facingMode: "environment" },
-      { fps: 10, qrbox: { width: 250, height: 250 } },
-      onScanSuccess
-    );
+  function onScanSuccess(decodedText) {
+    const product = products[decodedText.trim()];
+    const info = document.getElementById("info");
+    if (product) {
+      info.innerHTML = `
+        <strong>${product.name}</strong><br>
+        Μάρκα: ${product.brand}<br>
+        Τιμή: €${product.price.toFixed(2)}
+      `;
+    } else {
+      info.innerHTML = "Προϊόν δεν βρέθηκε.";
+    }
+  }
+
+  const html5QrCode = new Html5Qrcode("reader");
+  html5QrCode.start(
+    { facingMode: "environment" },
+    { fps: 10, qrbox: { width: 250, height: 250 } },
+    onScanSuccess
+  );
   </script>
 </body>
 </html>
